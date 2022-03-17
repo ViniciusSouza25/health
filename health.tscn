@@ -1,23 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://health.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
-[ext_resource path="res://debate 1.0.jpg" type="Texture" id=3]
+[ext_resource path="res://fotos para o debate/mp1.png" type="Texture" id=3]
+[ext_resource path="res://fotos para o debate/_whiteM2-removebg-preview.png" type="Texture" id=4]
+[ext_resource path="res://fotos para o debate/hp1.png" type="Texture" id=5]
+[ext_resource path="res://fotos para o debate/debate plano de fundo.jpg" type="Texture" id=6]
+[ext_resource path="res://fotos para o debate/mesa.png" type="Texture" id=7]
+[ext_resource path="res://fotos para o debate/@whiteF2.png" type="Texture" id=8]
 
 [node name="health" type="Node2D"]
 script = ExtResource( 1 )
-
-[node name="TextureRect" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Debate10" type="Sprite" parent="TextureRect"]
-position = Vector2( 512, 302 )
-scale = Vector2( 1.6262, 1.2766 )
-texture = ExtResource( 3 )
 
 [node name="bot1" type="Sprite" parent="."]
 position = Vector2( 215, 234 )
@@ -26,6 +19,36 @@ texture = ExtResource( 2 )
 [node name="bot2" type="Sprite" parent="."]
 position = Vector2( 826, 228 )
 texture = ExtResource( 2 )
+
+[node name="DebatePlanoDeFundo" type="Sprite" parent="."]
+position = Vector2( 512, 301.5 )
+scale = Vector2( 1.63578, 1.27872 )
+texture = ExtResource( 6 )
+
+[node name="Hp1" type="Sprite" parent="."]
+position = Vector2( 423, 285 )
+scale = Vector2( 1.02316, 1.03511 )
+texture = ExtResource( 5 )
+
+[node name="WhiteM2-removebg-preview" type="Sprite" parent="."]
+position = Vector2( 888, 295 )
+scale = Vector2( 0.497587, 0.463671 )
+texture = ExtResource( 4 )
+
+[node name="Mp1" type="Sprite" parent="."]
+position = Vector2( 678, 293 )
+scale = Vector2( 0.988226, 1.00211 )
+texture = ExtResource( 3 )
+
+[node name="whiteF2" type="Sprite" parent="."]
+position = Vector2( 681.313, 318.688 )
+scale = Vector2( 0.163932, 0.171549 )
+texture = ExtResource( 8 )
+
+[node name="Mesa" type="Sprite" parent="."]
+position = Vector2( 511.5, 300 )
+scale = Vector2( 1.63099, 1.29362 )
+texture = ExtResource( 7 )
 
 [node name="Button" type="Button" parent="."]
 margin_left = 145.0
