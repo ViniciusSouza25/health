@@ -46,8 +46,8 @@ scale = Vector2( 0.163932, 0.171549 )
 texture = ExtResource( 8 )
 
 [node name="Mesa" type="Sprite" parent="."]
-position = Vector2( 511.5, 300 )
-scale = Vector2( 1.63099, 1.29362 )
+position = Vector2( 514, 298.5 )
+scale = Vector2( 1.63898, 1.28724 )
 texture = ExtResource( 7 )
 
 [node name="Button" type="Button" parent="."]
