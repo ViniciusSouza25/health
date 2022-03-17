@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mp1.png-9d54c130a779aa7f63278c8a73c8221a.stex"
+path="res://.import/BM2.png-a25bc5b8393e3867571692886ad42246.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fotos para o debate/mp1.png"
-dest_files=[ "res://.import/mp1.png-9d54c130a779aa7f63278c8a73c8221a.stex" ]
+source_file="res://fotos para o debate/BM2.png"
+dest_files=[ "res://.import/BM2.png-a25bc5b8393e3867571692886ad42246.stex" ]
 
 [params]
 

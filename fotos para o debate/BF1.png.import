@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/_whiteM2-removebg-preview.png-b1d9b51845f57ab0f51abc369dd3f1b1.stex"
+path="res://.import/BF1.png-537511437b559b186672dc313c30ec95.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fotos para o debate/_whiteM2-removebg-preview.png"
-dest_files=[ "res://.import/_whiteM2-removebg-preview.png-b1d9b51845f57ab0f51abc369dd3f1b1.stex" ]
+source_file="res://fotos para o debate/BF1.png"
+dest_files=[ "res://.import/BF1.png-537511437b559b186672dc313c30ec95.stex" ]
 
 [params]
 

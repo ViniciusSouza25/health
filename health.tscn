@@ -2,12 +2,12 @@
 
 [ext_resource path="res://health.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
-[ext_resource path="res://fotos para o debate/mp1.png" type="Texture" id=3]
-[ext_resource path="res://fotos para o debate/_whiteM2-removebg-preview.png" type="Texture" id=4]
-[ext_resource path="res://fotos para o debate/hp1.png" type="Texture" id=5]
+[ext_resource path="res://fotos para o debate/BF2.png" type="Texture" id=3]
+[ext_resource path="res://fotos para o debate/WM1.png" type="Texture" id=4]
+[ext_resource path="res://fotos para o debate/BM2.png" type="Texture" id=5]
 [ext_resource path="res://fotos para o debate/debate plano de fundo.jpg" type="Texture" id=6]
 [ext_resource path="res://fotos para o debate/mesa.png" type="Texture" id=7]
-[ext_resource path="res://fotos para o debate/@whiteF2.png" type="Texture" id=8]
+[ext_resource path="res://fotos para o debate/WF1.png" type="Texture" id=8]
 
 [node name="health" type="Node2D"]
 script = ExtResource( 1 )
