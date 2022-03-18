@@ -92,10 +92,13 @@ __meta__ = {
 }
 
 [node name="ProgressBar2" type="ProgressBar" parent="."]
-margin_left = 523.0
-margin_top = 30.0
-margin_right = 1010.0
-margin_bottom = 111.0
+margin_left = 1011.0
+margin_top = 112.0
+margin_right = 1498.0
+margin_bottom = 193.0
+grow_horizontal = 0
+rect_rotation = -180.0
+percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -128,6 +131,38 @@ margin_right = 742.0
 margin_bottom = 228.0
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="."]
+visible = false
+margin_left = 758.0
+margin_top = 62.0
+margin_right = 787.0
+margin_bottom = 81.0
+text = "100"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="."]
+visible = false
+margin_left = 775.0
+margin_top = 62.0
+margin_right = 815.0
+margin_bottom = 76.0
+text = "%"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label6" type="Label" parent="."]
+margin_left = 753.0
+margin_top = 63.0
+margin_right = 793.0
+margin_bottom = 77.0
+text = "100%"
 __meta__ = {
 "_edit_use_anchors_": false
 }

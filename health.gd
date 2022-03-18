@@ -62,3 +62,14 @@ func _on_Button3_pressed():
 		#print("vida : ",vida)
 		get_node("ProgressBar").value = vida
 		$Label3.text = String("pergunta x")
+
+func _process (delta):
+	get_node("ProgressBar2").value = vida2
+	$Label4.text = String(vida2)
+	if vida2 < 100:
+		$Label4.show()
+		$Label5.show() 
+		$Label6.hide()
+	else:
+		$Label6.show()
+	
