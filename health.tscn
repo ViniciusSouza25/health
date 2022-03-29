@@ -1,173 +1,250 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://health.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
-[ext_resource path="res://fotos para o debate/BF2.png" type="Texture" id=3]
-[ext_resource path="res://fotos para o debate/WM1.png" type="Texture" id=4]
-[ext_resource path="res://fotos para o debate/BM2.png" type="Texture" id=5]
-[ext_resource path="res://fotos para o debate/debate plano de fundo.jpg" type="Texture" id=6]
-[ext_resource path="res://fotos para o debate/mesa.png" type="Texture" id=7]
-[ext_resource path="res://fotos para o debate/WF1.png" type="Texture" id=8]
+[ext_resource path="res://NPCs/MulherBrancaLado.png" type="Texture" id=2]
+[ext_resource path="res://mesa_debate.png" type="Texture" id=3]
+[ext_resource path="res://BarraHP/HPOver.png" type="Texture" id=4]
+[ext_resource path="res://BarraHP/HPProgress.png" type="Texture" id=5]
+[ext_resource path="res://BarraHP/HPUnder.png" type="Texture" id=6]
+[ext_resource path="res://NPCs/HomemNegroLado.png" type="Texture" id=7]
+[ext_resource path="res://BalõesConversa/answer-removebg-previewhover.png" type="Texture" id=8]
+[ext_resource path="res://BalõesConversa/answer-removebg-preview.png" type="Texture" id=9]
+[ext_resource path="res://NPCs/MulherNegraLado.png" type="Texture" id=10]
+[ext_resource path="res://NPCs/HomemBrancoLado.png" type="Texture" id=11]
+[ext_resource path="res://BalõesConversa/ChatNormal.png" type="Texture" id=12]
+[ext_resource path="res://Botões/aceitar.png" type="Texture" id=13]
+[ext_resource path="res://Botões/recusar.png" type="Texture" id=14]
 
 [node name="health" type="Node2D"]
 script = ExtResource( 1 )
 
-[node name="bot1" type="Sprite" parent="."]
-position = Vector2( 215, 234 )
-texture = ExtResource( 2 )
-
-[node name="bot2" type="Sprite" parent="."]
-position = Vector2( 826, 228 )
-texture = ExtResource( 2 )
-
-[node name="DebatePlanoDeFundo" type="Sprite" parent="."]
-position = Vector2( 512, 301.5 )
-scale = Vector2( 1.63578, 1.27872 )
-texture = ExtResource( 6 )
-
-[node name="Hp1" type="Sprite" parent="."]
-position = Vector2( 423, 285 )
-scale = Vector2( 1.02316, 1.03511 )
-texture = ExtResource( 5 )
-
-[node name="WhiteM2-removebg-preview" type="Sprite" parent="."]
-position = Vector2( 888, 295 )
-scale = Vector2( 0.497587, 0.463671 )
-texture = ExtResource( 4 )
-
-[node name="Mp1" type="Sprite" parent="."]
-position = Vector2( 678, 293 )
-scale = Vector2( 0.988226, 1.00211 )
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_top = 1.0
+margin_right = 1022.0
+margin_bottom = 602.0
 texture = ExtResource( 3 )
-
-[node name="whiteF2" type="Sprite" parent="."]
-position = Vector2( 681.313, 318.688 )
-scale = Vector2( 0.163932, 0.171549 )
-texture = ExtResource( 8 )
-
-[node name="Mesa" type="Sprite" parent="."]
-position = Vector2( 514, 298.5 )
-scale = Vector2( 1.63898, 1.28724 )
-texture = ExtResource( 7 )
-
-[node name="Button" type="Button" parent="."]
-margin_left = 145.0
-margin_top = 416.0
-margin_right = 268.0
-margin_bottom = 481.0
-text = "resposta 2"
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="."]
+[node name="bot2" type="Sprite" parent="."]
+position = Vector2( 809, 284 )
+scale = Vector2( 1.07418, 1.06564 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="bot1" type="Sprite" parent="."]
+position = Vector2( 173.703, 298.812 )
+scale = Vector2( 1.57858, 1.20412 )
+texture = ExtResource( 7 )
+
+[node name="bot3" type="Sprite" parent="."]
+position = Vector2( 936, 308 )
+scale = Vector2( 0.715297, 0.645686 )
+texture = ExtResource( 10 )
+
+[node name="bot4" type="Sprite" parent="."]
+position = Vector2( 716, 360 )
+scale = Vector2( 0.655099, 0.734972 )
+texture = ExtResource( 11 )
+flip_h = true
+
+[node name="MesaDebate" type="Sprite" parent="."]
+position = Vector2( 511.5, 279.5 )
+scale = Vector2( 1.6278, 1.35532 )
+texture = ExtResource( 3 )
+
+[node name="comicao_lifebar" type="Label" parent="."]
 margin_left = 526.0
 margin_top = -1.0
 margin_right = 1008.0
 margin_bottom = 33.0
-text = "barra de vida 2"
+text = "comissão"
 align = 1
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ProgressBar" type="ProgressBar" parent="."]
-margin_left = 3.0
-margin_top = 31.0
-margin_right = 495.0
-margin_bottom = 111.0
+[node name="ProgressBar" type="TextureProgress" parent="."]
+margin_left = 13.0
+margin_top = 26.0
+margin_right = 964.0
+margin_bottom = 134.0
+rect_scale = Vector2( 0.5, 0.6 )
+texture_under = ExtResource( 6 )
+texture_over = ExtResource( 4 )
+texture_progress = ExtResource( 5 )
+tint_progress = Color( 0.176471, 0.972549, 0.0862745, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="."]
-margin_left = 149.0
-margin_top = 334.0
-margin_right = 269.0
-margin_bottom = 397.0
-text = "resposta 1"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ProgressBar2" type="ProgressBar" parent="."]
-margin_left = 1011.0
-margin_top = 112.0
-margin_right = 1498.0
-margin_bottom = 193.0
-grow_horizontal = 0
-rect_rotation = -180.0
-percent_visible = false
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button3" type="Button" parent="."]
-margin_left = 146.0
-margin_top = 497.0
-margin_right = 268.0
-margin_bottom = 559.0
-text = "resposta 3"
+[node name="ProgressBar2" type="TextureProgress" parent="."]
+margin_left = 524.0
+margin_top = 27.0
+margin_right = 1475.0
+margin_bottom = 135.0
+rect_scale = Vector2( 0.5, 0.6 )
+texture_under = ExtResource( 6 )
+texture_over = ExtResource( 4 )
+texture_progress = ExtResource( 5 )
+fill_mode = 1
+tint_progress = Color( 0.980392, 0.0823529, 0.0823529, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label2" type="Label" parent="."]
-margin_left = 9.0
-margin_top = 5.0
-margin_right = 493.0
-margin_bottom = 31.0
-text = "barra de vida 1"
+margin_left = 15.0
+margin_top = 2.0
+margin_right = 499.0
+margin_bottom = 28.0
+text = "jogador"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Button2" type="TextureButton" parent="."]
+margin_left = 208.0
+margin_top = 214.0
+margin_right = 1114.0
+margin_bottom = 464.0
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 9 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="."]
+margin_left = 209.0
+margin_top = 323.0
+margin_right = 1115.0
+margin_bottom = 573.0
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 9 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button3" type="TextureButton" parent="."]
+margin_left = 211.0
+margin_top = 429.0
+margin_right = 1117.0
+margin_bottom = 679.0
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 9 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_left = 294.0
+margin_top = 59.0
+margin_right = 1321.0
+margin_bottom = 299.0
+rect_scale = Vector2( 0.4, 0.5 )
+texture = ExtResource( 12 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Label3" type="Label" parent="."]
-margin_left = 280.0
-margin_top = 130.0
-margin_right = 742.0
-margin_bottom = 228.0
+margin_left = 359.0
+margin_top = 83.0
+margin_right = 637.0
+margin_bottom = 149.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 align = 1
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label4" type="Label" parent="."]
+[node name="resposta1" type="Label" parent="."]
+margin_left = 282.0
+margin_top = 250.0
+margin_right = 502.0
+margin_bottom = 291.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="resposta2" type="Label" parent="."]
+margin_left = 279.0
+margin_top = 358.0
+margin_right = 524.0
+margin_bottom = 402.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="resposta3" type="Label" parent="."]
+margin_left = 275.0
+margin_top = 463.0
+margin_right = 521.0
+margin_bottom = 506.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="."]
 visible = false
-margin_left = 758.0
-margin_top = 62.0
-margin_right = 787.0
-margin_bottom = 81.0
-text = "100"
+margin_left = 36.0
+margin_top = 254.0
+margin_right = 987.0
+margin_bottom = 362.0
+rect_scale = Vector2( 1, 2 )
+texture = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label5" type="Label" parent="."]
-visible = false
-margin_left = 775.0
-margin_top = 62.0
-margin_right = 815.0
-margin_bottom = 76.0
-text = "%"
+[node name="botao_expancao" type="TextureButton" parent="TextureRect3"]
+margin_left = 793.0
+margin_top = 10.0
+margin_right = 1307.0
+margin_bottom = 496.0
+rect_scale = Vector2( 0.1, 0.04 )
+texture_normal = ExtResource( 13 )
+
+[node name="botao_expancao2" type="TextureButton" parent="TextureRect3"]
+margin_left = 853.0
+margin_top = 10.5
+margin_right = 1282.0
+margin_bottom = 431.5
+rect_scale = Vector2( 0.1, 0.04 )
+texture_normal = ExtResource( 14 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label6" type="Label" parent="."]
-margin_left = 753.0
-margin_top = 63.0
-margin_right = 793.0
-margin_bottom = 77.0
-text = "100%"
+[node name="pergunta_expandida" type="Label" parent="TextureRect3"]
+margin_left = 107.0
+margin_top = 29.0
+margin_right = 843.0
+margin_bottom = 90.0
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
-[connection signal="changed" from="ProgressBar" to="." method="_on_ProgressBar_changed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
-[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="button3" to="." method="_on_button3_pressed"]

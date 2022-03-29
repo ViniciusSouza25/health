@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BF2.png-6ac4199ed4adc8cc07c6b0ecde34a082.stex"
+path="res://.import/MulherBrancaLado.png-f6ee47b29e850590406535598d99ba06.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fotos para o debate/BF2.png"
-dest_files=[ "res://.import/BF2.png-6ac4199ed4adc8cc07c6b0ecde34a082.stex" ]
+source_file="res://NPCs/MulherBrancaLado.png"
+dest_files=[ "res://.import/MulherBrancaLado.png-f6ee47b29e850590406535598d99ba06.stex" ]
 
 [params]
 

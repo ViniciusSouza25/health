@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mesa.png-7dd31c12a97a5ee0c4e7b747a98e9df5.stex"
+path="res://.import/HomemBrancoLado.png-dce30318439297063cca36d543d28be9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fotos para o debate/mesa.png"
-dest_files=[ "res://.import/mesa.png-7dd31c12a97a5ee0c4e7b747a98e9df5.stex" ]
+source_file="res://NPCs/HomemBrancoLado.png"
+dest_files=[ "res://.import/HomemBrancoLado.png-dce30318439297063cca36d543d28be9.stex" ]
 
 [params]
 
