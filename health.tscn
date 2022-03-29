@@ -143,6 +143,42 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="resposta3" type="Label" parent="."]
+margin_left = 275.0
+margin_top = 463.0
+margin_right = 515.0
+margin_bottom = 505.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="resposta2" type="Label" parent="."]
+margin_left = 279.0
+margin_top = 358.0
+margin_right = 519.0
+margin_bottom = 397.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="resposta1" type="Label" parent="."]
+margin_left = 282.0
+margin_top = 250.0
+margin_right = 514.0
+margin_bottom = 291.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="TextureRect2" type="TextureRect" parent="."]
 margin_left = 294.0
 margin_top = 59.0
@@ -160,42 +196,6 @@ margin_left = 359.0
 margin_top = 83.0
 margin_right = 637.0
 margin_bottom = 149.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="resposta1" type="Label" parent="."]
-margin_left = 282.0
-margin_top = 250.0
-margin_right = 502.0
-margin_bottom = 291.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="resposta2" type="Label" parent="."]
-margin_left = 279.0
-margin_top = 358.0
-margin_right = 524.0
-margin_bottom = 402.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="resposta3" type="Label" parent="."]
-margin_left = 275.0
-margin_top = 463.0
-margin_right = 521.0
-margin_bottom = 506.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 align = 1
 valign = 1
@@ -239,6 +239,96 @@ margin_left = 107.0
 margin_top = 29.0
 margin_right = 843.0
 margin_bottom = 90.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "resposta expandida"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+visible = false
+margin_left = 36.0
+margin_top = 254.0
+margin_right = 987.0
+margin_bottom = 362.0
+rect_scale = Vector2( 1, 2 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="botao2_expancao" type="TextureButton" parent="TextureRect4"]
+margin_left = 793.0
+margin_top = 10.0
+margin_right = 1307.0
+margin_bottom = 496.0
+rect_scale = Vector2( 0.1, 0.04 )
+texture_normal = ExtResource( 13 )
+
+[node name="botao2_expancao2" type="TextureButton" parent="TextureRect4"]
+margin_left = 853.0
+margin_top = 10.5
+margin_right = 1282.0
+margin_bottom = 431.5
+rect_scale = Vector2( 0.1, 0.04 )
+texture_normal = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pergunta2_expandida" type="Label" parent="TextureRect4"]
+margin_left = 107.0
+margin_top = 29.0
+margin_right = 843.0
+margin_bottom = 90.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "resposta expandida"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="."]
+visible = false
+margin_left = 36.0
+margin_top = 254.0
+margin_right = 987.0
+margin_bottom = 362.0
+rect_scale = Vector2( 1, 2 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="botao3_expancao" type="TextureButton" parent="TextureRect5"]
+margin_left = 793.0
+margin_top = 10.0
+margin_right = 1307.0
+margin_bottom = 496.0
+rect_scale = Vector2( 0.1, 0.04 )
+texture_normal = ExtResource( 13 )
+
+[node name="botao3_expancao2" type="TextureButton" parent="TextureRect5"]
+margin_left = 853.0
+margin_top = 10.5
+margin_right = 1282.0
+margin_bottom = 431.5
+rect_scale = Vector2( 0.1, 0.04 )
+texture_normal = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pergunta3_expandida" type="Label" parent="TextureRect5"]
+margin_left = 107.0
+margin_top = 29.0
+margin_right = 843.0
+margin_bottom = 90.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "resposta expandida"
 align = 1
 valign = 1
 __meta__ = {
@@ -248,3 +338,9 @@ __meta__ = {
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="button3" to="." method="_on_button3_pressed"]
+[connection signal="pressed" from="TextureRect3/botao_expancao" to="." method="_on_botao_expancao_pressed"]
+[connection signal="pressed" from="TextureRect3/botao_expancao2" to="." method="_on_botao_expancao2_pressed"]
+[connection signal="pressed" from="TextureRect4/botao2_expancao" to="." method="_on_botao2_expancao_pressed"]
+[connection signal="pressed" from="TextureRect4/botao2_expancao2" to="." method="_on_botao2_expancao2_pressed"]
+[connection signal="pressed" from="TextureRect5/botao3_expancao" to="." method="_on_botao3_expancao_pressed"]
+[connection signal="pressed" from="TextureRect5/botao3_expancao2" to="." method="_on_botao3_expancao2_pressed"]
